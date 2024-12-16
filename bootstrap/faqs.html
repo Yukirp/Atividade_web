@@ -62,6 +62,17 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .faq-item {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item h5 {
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -82,7 +93,7 @@
                     <li class="nav-item"><a class="nav-link" href="depoimentos.html">Depoimentos</a></li>
                     <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faqs.html">faqs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
                     <li class="nav-item"><a class="nav-link" href="sessoes.html">Sessões</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                 </ul>
@@ -90,7 +101,30 @@
         </div>
     </nav>
 
-    {{conteudo}}
+    <!-- Conteúdo Principal -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Perguntas Frequentes (FAQs)</h2>
+        <div class="faq-item">
+            <h5>1. Quais tipos de fotografia vocês realizam?</h5>
+            <p>Trabalhamos com uma ampla variedade de estilos, incluindo fotografia de casamentos, eventos, retratos, ensaios ao ar livre e muito mais.</p>
+        </div>
+        <div class="faq-item">
+            <h5>2. Como posso agendar uma sessão de fotos?</h5>
+            <p>Você pode agendar sua sessão entrando em contato conosco através da página de <a href="contato.html">Contato</a>, onde você encontra nosso formulário e informações para atendimento.</p>
+        </div>
+        <div class="faq-item">
+            <h5>3. Vocês oferecem serviços de edição de fotos?</h5>
+            <p>Sim, todas as nossas fotos incluem edição básica. Também oferecemos edição avançada mediante solicitação.</p>
+        </div>
+        <div class="faq-item">
+            <h5>4. Posso escolher o local para a sessão de fotos?</h5>
+            <p>Claro! Estamos abertos a realizar ensaios no local de sua preferência, desde que seja seguro e viável.</p>
+        </div>
+        <div class="faq-item">
+            <h5>5. Quanto tempo leva para receber as fotos?</h5>
+            <p>O prazo varia de acordo com o projeto, mas geralmente entregamos as fotos em até 15 dias úteis após a sessão.</p>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-light">

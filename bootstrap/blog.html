@@ -62,6 +62,21 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .blog-post {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin-bottom: 1.5rem;
+        }
+        .blog-post img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .blog-post h3 {
+            margin-top: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -82,7 +97,7 @@
                     <li class="nav-item"><a class="nav-link" href="depoimentos.html">Depoimentos</a></li>
                     <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faqs.html">faqs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
                     <li class="nav-item"><a class="nav-link" href="sessoes.html">Sessões</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                 </ul>
@@ -90,7 +105,44 @@
         </div>
     </nav>
 
-    {{conteudo}}
+    <!-- Conteúdo Principal -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Blog</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="blog-post">
+                    <img src="https://via.placeholder.com/600x300" alt="Post 1">
+                    <h3>5 Dicas para Melhorar Suas Fotografias</h3>
+                    <p>Descubra como melhorar suas habilidades de fotografia com essas 5 dicas essenciais. Clique para saber mais!</p>
+                    <a href="#" class="btn btn-primary">Leia Mais</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="blog-post">
+                    <img src="https://via.placeholder.com/600x300" alt="Post 2">
+                    <h3>Os Melhores Locais para Ensaios Fotográficos</h3>
+                    <p>Explore os lugares mais bonitos para realizar ensaios fotográficos e criar memórias inesquecíveis.</p>
+                    <a href="#" class="btn btn-primary">Leia Mais</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="blog-post">
+                    <img src="https://via.placeholder.com/600x300" alt="Post 3">
+                    <h3>Como Escolher o Fotógrafo Ideal para Seu Evento</h3>
+                    <p>Dicas e truques para selecionar o profissional perfeito para capturar os momentos mais importantes da sua vida.</p>
+                    <a href="#" class="btn btn-primary">Leia Mais</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="blog-post">
+                    <img src="https://via.placeholder.com/600x300" alt="Post 4">
+                    <h3>Tendências de Fotografia para 2024</h3>
+                    <p>Fique por dentro das últimas tendências e estilos que estão dominando o mundo da fotografia.</p>
+                    <a href="#" class="btn btn-primary">Leia Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-light">

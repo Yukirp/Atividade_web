@@ -62,6 +62,13 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .portfolio-item img {
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item img:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -82,7 +89,7 @@
                     <li class="nav-item"><a class="nav-link" href="depoimentos.html">Depoimentos</a></li>
                     <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faqs.html">faqs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
                     <li class="nav-item"><a class="nav-link" href="sessoes.html">Sessões</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                 </ul>
@@ -90,22 +97,43 @@
         </div>
     </nav>
 
-    <section id="portfolio" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center">Portfólio</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Portfolio Item">
-                        <div class="card-body">
-                            <p class="card-text">Descrição da foto.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Adicione mais cards aqui -->
+    <!-- Conteúdo Principal -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Portfólio</h2>
+        <div class="row g-4">
+            <div class="col-md-4 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Foto 1" class="img-fluid">
+                <h5 class="mt-2">Sessão de Casamento</h5>
+                <p>Uma bela captura de momentos especiais.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Foto 2" class="img-fluid">
+                <h5 class="mt-2">Paisagens Naturais</h5>
+                <p>Fotografias que destacam a beleza da natureza.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Foto 3" class="img-fluid">
+                <h5 class="mt-2">Retratos Profissionais</h5>
+                <p>Ensaio para clientes que desejam algo especial.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Foto 4" class="img-fluid">
+                <h5 class="mt-2">Eventos Corporativos</h5>
+                <p>Registros de momentos importantes de empresas.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Foto 5" class="img-fluid">
+                <h5 class="mt-2">Ensaio Familiar</h5>
+                <p>Momentos de carinho em família eternizados.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Foto 6" class="img-fluid">
+                <h5 class="mt-2">Fotografia Artística</h5>
+                <p>Obras que combinam criatividade e técnica.</p>
             </div>
         </div>
-    </section>
+    </div>
+
 
     <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-light">

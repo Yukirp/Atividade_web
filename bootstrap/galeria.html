@@ -62,6 +62,14 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .gallery img {
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            width: 100%;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -82,7 +90,7 @@
                     <li class="nav-item"><a class="nav-link" href="depoimentos.html">Depoimentos</a></li>
                     <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faqs.html">faqs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
                     <li class="nav-item"><a class="nav-link" href="sessoes.html">Sessões</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                 </ul>
@@ -90,7 +98,38 @@
         </div>
     </nav>
 
-    {{conteudo}}
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Galeria</h2>
+        <div class="row g-4 gallery">
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/350" alt="Imagem 1">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/350" alt="Imagem 2">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/350" alt="Imagem 3">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/350" alt="Imagem 4">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/350" alt="Imagem 5">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/350" alt="Imagem 6">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/350" alt="Imagem 7">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/350" alt="Imagem 8">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/350" alt="Imagem 9">
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-light">

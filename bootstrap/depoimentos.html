@@ -62,6 +62,23 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .testimonial {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .testimonial img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .testimonial h5 {
+            margin-bottom: 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -82,7 +99,7 @@
                     <li class="nav-item"><a class="nav-link" href="depoimentos.html">Depoimentos</a></li>
                     <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faqs.html">faqs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
                     <li class="nav-item"><a class="nav-link" href="sessoes.html">Sessões</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                 </ul>
@@ -90,7 +107,54 @@
         </div>
     </nav>
 
-    {{conteudo}}
+    <!-- Conteúdo Principal -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Depoimentos</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="testimonial text-center">
+                    <img src="https://via.placeholder.com/80" alt="Cliente 1">
+                    <h5>Cliente 1</h5>
+                    <p>"O trabalho do fotógrafo foi incrível! As fotos capturam momentos inesquecíveis com perfeição."</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial text-center">
+                    <img src="https://via.placeholder.com/80" alt="Cliente 2">
+                    <h5>Cliente 2</h5>
+                    <p>"Adorei a experiência! Profissionalismo e criatividade em cada clique."</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial text-center">
+                    <img src="https://via.placeholder.com/80" alt="Cliente 3">
+                    <h5>Cliente 3</h5>
+                    <p>"Fotos deslumbrantes e um atendimento impecável. Recomendo a todos!"</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial text-center">
+                    <img src="https://via.placeholder.com/80" alt="Cliente 4">
+                    <h5>Cliente 4</h5>
+                    <p>"As fotos são até melhores do que eu esperava! Um trabalho de alta qualidade."</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial text-center">
+                    <img src="https://via.placeholder.com/80" alt="Cliente 5">
+                    <h5>Cliente 5</h5>
+                    <p>"Cada detalhe foi capturado com tanta precisão. Superou minhas expectativas!"</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial text-center">
+                    <img src="https://via.placeholder.com/80" alt="Cliente 6">
+                    <h5>Cliente 6</h5>
+                    <p>"Uma experiência inesquecível e um álbum maravilhoso para lembrar para sempre."</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-light">

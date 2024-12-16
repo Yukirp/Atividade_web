@@ -62,6 +62,22 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .about-section {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .about-section h2 {
+            margin-bottom: 1.5rem;
+        }
+        .about-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -82,7 +98,7 @@
                     <li class="nav-item"><a class="nav-link" href="depoimentos.html">Depoimentos</a></li>
                     <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faqs.html">faqs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
                     <li class="nav-item"><a class="nav-link" href="sessoes.html">Sessões</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                 </ul>
@@ -90,7 +106,43 @@
         </div>
     </nav>
 
-    {{conteudo}}
+    <!-- Conteúdo Principal -->
+    <div class="container my-5">
+        <div class="about-section">
+            <h2>Sobre Mim</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Sou um apaixonado por fotografia com mais de 10 anos de experiência capturando momentos únicos e especiais. Meu objetivo é contar histórias através das lentes, criando memórias inesquecíveis para meus clientes. 
+                    </p>
+                    <p>
+                        Especializado em fotografia de casamentos, retratos, famílias e produtos, sempre busco inovar e oferecer serviços de alta qualidade que atendam às expectativas dos meus clientes. Acreditando na importância de cada detalhe, trabalho para tornar cada sessão uma experiência única e personalizada.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" alt="Fotógrafo">
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>Minha Missão</h2>
+            <p>
+                Minha missão é capturar a beleza e a essência de cada momento, oferecendo imagens que transcendam o tempo e emocionem gerações futuras. Acredito que a fotografia é mais do que uma arte — é uma forma de eternizar histórias.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>Valores</h2>
+            <ul>
+                <li>Excelência em cada detalhe</li>
+                <li>Paixão pela arte da fotografia</li>
+                <li>Compromisso com a satisfação do cliente</li>
+                <li>Inovação e criatividade</li>
+                <li>Respeito e empatia</li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-light">
