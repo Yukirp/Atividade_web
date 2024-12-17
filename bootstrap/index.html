@@ -62,6 +62,50 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .section-preview {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .service-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .portfolio-item img {
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item img:hover {
+            transform: scale(1.05);
+        }
+        .testimonial {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .testimonial img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .testimonial h5 {
+            margin-bottom: 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -98,38 +142,82 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center">Portfólio</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Portfolio Item">
-                        <div class="card-body">
-                            <p class="card-text">Descrição da foto.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Adicione mais cards aqui -->
-            </div>
-        </div>
-    </section>
-
   <!-- Services Section -->
     <section id="services" class="py-5">
         <div class="container">
             <h2 class="text-center">Serviços</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">Serviço 1</h5>
-                            <p class="card-text">Descrição do serviço.</p>
+                <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card service-item">
+                                        <img src="https://via.placeholder.com/350" class="card-img-top" alt="Casamentos">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Fotografia de Casamentos</h5>
+                                            <p class="card-text">Capturamos os momentos mais especiais do seu grande dia com qualidade e emoção.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card service-item">
+                                        <img src="https://via.placeholder.com/350" class="card-img-top" alt="Retratos">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Retratos Profissionais</h5>
+                                            <p class="card-text">Sessões de retratos para profissionais, famílias e muito mais.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card service-item">
+                                        <img src="https://via.placeholder.com/350" class="card-img-top" alt="Eventos">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cobertura de Eventos</h5>
+                                            <p class="card-text">Registre eventos corporativos, aniversários e outros com profissionalismo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card service-item">
+                                        <img src="https://via.placeholder.com/350" class="card-img-top" alt="Paisagens">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Fotografia de Paisagens</h5>
+                                            <p class="card-text">Capturamos a beleza natural com criatividade e técnica.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card service-item">
+                                        <img src="https://via.placeholder.com/350" class="card-img-top" alt="Produtos">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Fotografia de Produtos</h5>
+                                            <p class="card-text">Destaque seus produtos com imagens de alta qualidade.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card service-item">
+                                        <img src="https://via.placeholder.com/350" class="card-img-top" alt="Ensaios">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ensaios Fotográficos</h5>
+                                            <p class="card-text">Sessões fotográficas personalizadas para todas as ocasiões.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Adicione mais serviços aqui -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                <a href="servicos.html" class="btn btn-primary">Ver Serviços</a>
             </div>
         </div>
     </section> 
@@ -138,10 +226,24 @@
     <section id="gallery" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center">Galeria</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="https://via.placeholder.com/150" class="img-fluid" alt="Gallery Image">
-                </div>
+            <div class="row" id="galleryimgs">
+                <script>
+                    // Função para adicionar múltiplos blocos
+                    function adicionarBlocos(qtd) {
+                        const container = document.querySelector('#galleryimgs'); // Local onde os blocos serão adicionados
+                
+                        for (let i = 0; i < qtd; i++) {
+                            const col = document.createElement('div');
+                            col.className = 'col-md-3';
+                            col.innerHTML = `<img src="https://via.placeholder.com/300" class="img-fluid" alt="Gallery Image">`;
+                            container.appendChild(col);
+                        }
+                    }
+                    // Adicione 10 blocos após o carregamento da página
+                    window.onload = () => {
+                        adicionarBlocos(12);
+                    };
+                </script>
                 <!-- Adicione mais imagens aqui -->
             </div>
         </div>
@@ -154,10 +256,62 @@
             <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <p>"Excelente fotógrafo! Super recomendo."</p>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="testimonial text-center">
+                                    <img src="https://via.placeholder.com/80" alt="Cliente 1">
+                                    <h5>Cliente 1</h5>
+                                    <p>"O trabalho do fotógrafo foi incrível! As fotos capturam momentos inesquecíveis com perfeição."</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial text-center">
+                                    <img src="https://via.placeholder.com/80" alt="Cliente 2">
+                                    <h5>Cliente 2</h5>
+                                    <p>"Adorei a experiência! Profissionalismo e criatividade em cada clique."</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial text-center">
+                                    <img src="https://via.placeholder.com/80" alt="Cliente 3">
+                                    <h5>Cliente 3</h5>
+                                    <p>"Fotos deslumbrantes e um atendimento impecável. Recomendo a todos!"</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Adicione mais depoimentos aqui -->
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="testimonial text-center">
+                                    <img src="https://via.placeholder.com/80" alt="Cliente 4">
+                                    <h5>Cliente 4</h5>
+                                    <p>"As fotos são até melhores do que eu esperava! Um trabalho de alta qualidade."</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial text-center">
+                                    <img src="https://via.placeholder.com/80" alt="Cliente 5">
+                                    <h5>Cliente 5</h5>
+                                    <p>"Cada detalhe foi capturado com tanta precisão. Superou minhas expectativas!"</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial text-center">
+                                    <img src="https://via.placeholder.com/80" alt="Cliente 6">
+                                    <h5>Cliente 6</h5>
+                                    <p>"Uma experiência inesquecível e um álbum maravilhoso para lembrar para sempre."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
             </div>
         </div>
     </section>
